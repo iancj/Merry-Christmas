@@ -105,7 +105,7 @@ $(function(){
 			.one(transitionEvents, function(){
 				if(parseInt(preload.loadedPer)>=99){
 					$loading.find(".loading-text").text("加载完成");
-					$loading.fadeOut(600,animates.step1);
+					$("#j-playBgMusic").fadeIn(200);
 				}
 			})
 		}
@@ -115,4 +115,12 @@ $(function(){
 	for(var i=0;i<preload.imgs.length;i++){
 		preload.doLoadImg(preload.imgs[i]);
 	}
+
+	//点击播放背景音乐并显示贺卡
+	$('#j-playBgMusic').click(function(){
+		$(".loading-mask").addClass("outLeft");
+		$(".page").addClass("in");
+		setTimeout(animates.step1,300);
+		$("#bgmusci")[0].play();
+	});
 });

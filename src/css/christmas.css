@@ -6,6 +6,7 @@ body {
 }
 html,body{
 	height:100%;
+	overflow:hidden;
 }
 a {
     text-decoration: none;
@@ -49,7 +50,32 @@ input{outline:none;-webkit-appearance : none ;}
 .txtRight{text-align:right;}
 .txtCenter{text-align:center;}
 
+.out{
+	-webkit-transform:translate(100%,0);
+	-ms-transform:translate(100%,0);
+	-o-transform:translate(100%,0);
+	transform:translate(100%,0);
+}
+.outLeft{
+	-webkit-transform:translate(-100%,0);
+	-ms-transform:translate(-100%,0);
+	-o-transform:translate(-100%,0);
+	transform:translate(-100%,0);
+}
+.in{
+	-webkit-transform:translate(0,0);
+	-ms-transform:translate(0,0);
+	-o-transform:translate(0,0);
+	transform:translate(0,0);
+}
+
 /*loading*/
+.loading-mask,
+.page{
+	-webkit-transition:all .3s linear;
+	-o-transition:all .3s linear;
+	transition:all .3s linear;
+}
 .loading-mask{
 	position: absolute;
 	top:0;
@@ -94,7 +120,21 @@ input{outline:none;-webkit-appearance : none ;}
 	-webkit-transition:all 0.6s linear;
 	transition:all 0.6s linear;
 }
-
+.playBgMusic{
+	display: none;
+	position: absolute;
+	bottom:40px;
+	left:50%;
+	margin-left: -50px;
+	width:100px;
+	height: 30px;
+	line-height: 30px;
+	background: #ffaa00;
+	color: #fff;
+	text-align: center;
+	border-radius:5px;
+	z-index: 999999
+}
 /*icon-car*/
 .icon-car{
 	position: absolute;
@@ -108,9 +148,15 @@ input{outline:none;-webkit-appearance : none ;}
 }
 
 /*content*/
+.page{
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
 .content{
 	position: relative;
 	height:100%;
+	width:100%;
 	min-height:504px;
 	overflow:hidden;
 }
@@ -351,6 +397,27 @@ input{outline:none;-webkit-appearance : none ;}
 	transition:all .6s linear;
 }
 /*animation*/
+@-webkit-keyframes notifylight {
+	0%,100%{
+		background-color:#fedc3f
+	}
+	50%{
+		background-color:#ff9c00
+	}
+}
+@keyframes notifylight {
+	0%,100%{
+		background-color:#fedc3f
+	}
+	50%{
+		background-color:#ff9c00
+	}
+}
+.animate-notifylight{
+	-webkit-animation:notifylight 2s linear 0 infinite;
+	animation:notifylight 2s linear 0 infinite;
+}
+
 @-webkit-keyframes bigSnowRotate {
 	0%{
 		-webkit-transform:rotate(0deg);

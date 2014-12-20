@@ -20,40 +20,45 @@
 			<p class="loading-text">努力加载中...</p>
 		</section>
 		<!-- end loading -->
+		<a href="javascript:;" class="playBgMusic animate-notifylight" id="j-playBgMusic">进入</a>
 	</section>
 
-	<section class="content">
-		<!-- animate class bigSnow-smallPos -->
-		<section class="bigSnow-panel j-bigSnow animate-bigSnowRotate transition">
-			<i class="img-bigSnow snow1 animate-bigSnow1Change transition"></i>
-			<i class="img-bigSnow snow2 animate-bigSnow2Change transition"></i>
-			<i class="img-bigSnow snow3 animate-bigSnow3Change transition"></i>
+	<section class="page out">
+		<section class="content">
+			<!-- animate class bigSnow-smallPos -->
+			<section class="bigSnow-panel j-bigSnow animate-bigSnowRotate transition">
+				<i class="img-bigSnow snow1 animate-bigSnow1Change transition"></i>
+				<i class="img-bigSnow snow2 animate-bigSnow2Change transition"></i>
+				<i class="img-bigSnow snow3 animate-bigSnow3Change transition"></i>
+			</section>
+			<!-- end bigSnow-panel -->
+
+			<div class="banner-panel j-banner opacity0 animated">
+				<!-- animate class show -->
+				<span class="textMask mask1 j-textmask1"><i class="transition"></i></span>
+				<span class="textMask mask2 j-textmask2"><i class="transition"></i></span>
+				<span class="textMask mask3 j-textmask3"><i class="transition"></i></span>
+				<i class="img-glove animate-gloveSwing"></i>
+			</div>
+
+			<i class="img-tree left opacity0 transition tn j-tree-left"></i>
+			<i class="img-tree right opacity0 transition tn j-tree-right"></i>
+			<!-- end trees -->
+
+			<section class="bag-panel opacity0 animated j-bag">
+				<i class="img-gift gift1 j-gift1 opacity0 animated"></i>
+				<i class="img-gift gift2 j-gift2 opacity0 animated"></i>
+				<i class="img-gift gift3 j-gift3 opacity0 animated"></i>
+			</section>
+			<!-- end bag-panel -->
+
+			<i class="img-stars opacity0 animated j-stars"></i>
+			<i class="content-bg opacity0 animated j-bottomBg"></i>
 		</section>
-		<!-- end bigSnow-panel -->
-
-		<div class="banner-panel j-banner opacity0 animated">
-			<!-- animate class show -->
-			<span class="textMask mask1 j-textmask1"><i class="transition"></i></span>
-			<span class="textMask mask2 j-textmask2"><i class="transition"></i></span>
-			<span class="textMask mask3 j-textmask3"><i class="transition"></i></span>
-			<i class="img-glove animate-gloveSwing"></i>
-		</div>
-
-		<i class="img-tree left opacity0 transition tn j-tree-left"></i>
-		<i class="img-tree right opacity0 transition tn j-tree-right"></i>
-		<!-- end trees -->
-
-		<section class="bag-panel opacity0 animated j-bag">
-			<i class="img-gift gift1 j-gift1 opacity0 animated"></i>
-			<i class="img-gift gift2 j-gift2 opacity0 animated"></i>
-			<i class="img-gift gift3 j-gift3 opacity0 animated"></i>
-		</section>
-		<!-- end bag-panel -->
-
-		<i class="img-stars opacity0 animated j-stars"></i>
-		<i class="content-bg opacity0 animated j-bottomBg"></i>
+		<!-- end content -->
 	</section>
-	<!-- end content -->
+
+	<audio id="bgmusci" preload="load" loop="loop"><source src="main.mp3" type="audio/mpeg" /></audio>
 
 	<!-- for dev -->
 	<!--<script src="src/js/zepto-min.js"></script>
@@ -62,7 +67,6 @@
 	
 	<!-- for pro -->
 	<script src="dist/js/app.js"></script>
-
 	<script>
 	ISPRO=true;
 	</script>
