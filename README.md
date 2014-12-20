@@ -1,6 +1,6 @@
 #圣诞节电子贺卡——用代码来泡妹子
 
-代码也可以用来泡妹子滴~~
+用空闲时间设计了一张圣诞节的电子贺卡，用CSS3实现动画效果
 
 使用github的pages或者coding的项目演示来部署代码，将项目地址生成一个二维码
 
@@ -15,3 +15,5 @@
 这是我为给妹子部署的：
 
 <img src="qrcode.png" width="200">
+
+设计稿PSD下载地址：<a href="http://pan.baidu.com/s/1gdw3lEr" target="_blank">[下载]</a>
